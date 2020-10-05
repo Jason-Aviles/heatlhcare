@@ -1,0 +1,36 @@
+.heading-secondary{
+
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right,#559ADF,#0037D5);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  &--smallFont{font-size: 1.6rem;}
+}
+.heading-third{
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+
+.portal-login__header{
+  margin-bottom: 1rem;
+  
+}
+
+
+.paragraph{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: turquoise;
+}
+
+ul{padding: 0 2rem;}
+li{    text-align: start;margin-bottom: 1rem;
+  text-transform: capitalize;}

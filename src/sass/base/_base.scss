@@ -1,0 +1,40 @@
+:root {
+  --primary: #22D2A0;
+  --secondary: #192824;
+  --background: #e2e2e2;
+  --green: #367edc;
+  --yellow: #568ed6;
+  --orange: #73a1dd;
+  --red: #78a0d3;
+} 
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
+
+body {
+  font-family: serif;
+  font-weight: 400;
+  // font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+background-image: linear-gradient(to right bottom,#cfd6e4,white);
+background-position: center;
+background-size: cover;
+background-repeat: none;
+  box-sizing: border-box;
+}
+
+

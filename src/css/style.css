@@ -1,0 +1,283 @@
+:root {
+  --primary: #22D2A0;
+  --secondary: #192824;
+  --background: #e2e2e2;
+  --green: #367edc;
+  --yellow: #568ed6;
+  --orange: #73a1dd;
+  --red: #78a0d3; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+  background-image: linear-gradient(to right bottom, #cfd6e4, white);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  box-sizing: border-box; }
+
+.heading-secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #559ADF, #0037D5);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem; }
+  .heading-secondary--smallFont {
+    font-size: 1.6rem; }
+
+.heading-third {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  text-transform: uppercase; }
+
+.portal-login__header {
+  margin-bottom: 1rem; }
+
+.paragraph {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: turquoise; }
+
+ul {
+  padding: 0 2rem; }
+
+li {
+  text-align: start;
+  margin-bottom: 1rem;
+  text-transform: capitalize; }
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to right, #559adf, #0037d5);
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: 600; }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn-white {
+  background-color: white;
+  color: #777; }
+
+.btn-noHover,
+.btn-noHover:link,
+.btn-noHover:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s; }
+
+.btn-noHover:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to right, #559adf, #0037d5);
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: 600; }
+
+.btn-noHover:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.90;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.boxes {
+  text-align: center;
+  border: outset #1C6EA4 3px;
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  height: 20rem;
+  transition: all .5s ease-in;
+  box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green), 20px -20px 0 -3px var(--background), 20px -20px var(--yellow); }
+  .boxes:hover {
+    background-image: linear-gradient(to right, white, rgba(164, 192, 228, 0.556));
+    cursor: pointer;
+    font-weight: 700;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .boxes__icon {
+    width: 25%; }
+
+.videoHeader {
+  position: relative;
+  height: 95vh;
+  background-color: rgba(148, 148, 170, 0.289);
+  background-position: top;
+  background-size: center; }
+
+.header-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.helpingHand {
+  position: relative;
+  background-color: rgba(148, 148, 170, 0.289);
+  height: 100%;
+  width: 100%;
+  margin-top: 2rem; }
+  .helpingHand__img {
+    height: 30rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2; }
+  .helpingHand__key {
+    opacity: 0.85; }
+
+.main {
+  position: relative; }
+
+.Schedule {
+  position: relative;
+  margin-bottom: 2rem; }
+  .Schedule__side {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s ease-out;
+    background-color: rgba(148, 148, 170, 0.289);
+    height: 100%;
+    width: 100%; }
+    .Schedule__side--front {
+      width: 100%;
+      height: 20rem;
+      background-color: red;
+      z-index: -1;
+      opacity: 0.2;
+      transition: all .8s ease-out; }
+    .Schedule__side--back {
+      width: 60%;
+      transform: rotateY(180deg); }
+    .Schedule__side__img {
+      width: 100%;
+      height: 30rem; }
+
+.portal-login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem; }
+  .portal-login__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 20rem;
+    background-color: rgba(168, 201, 168, 0.35);
+    text-align: center;
+    padding: 2rem 1rem; }
+  .portal-login__input {
+    margin-bottom: 1rem;
+    padding: 0.6rem 0.5rem;
+    border-radius: 100px;
+    border: 1px rgba(255, 0, 140, 0) solid;
+    transition: all 1s ease-in-out; }
+    .portal-login__input:focus {
+      outline: none;
+      border-bottom: 1px #1900ff solid; }
+      .portal-login__input:focus:invalid {
+        border-bottom: 1px #ff008c solid;
+        border-bottom: 1px #ff008c solid; }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  text-transform: uppercase; }
+
+.aboutUs__header {
+  background: url("kids.jpeg") no-repeat center center fixed;
+  height: 20rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; }
+
+.aboutUs__text {
+  background-color: rgba(0, 0, 255, 0.213);
+  width: 100%;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.809); }
+
+.aboutUs__para {
+  background-color: rgba(243, 243, 243, 0.939);
+  margin: 2rem auto;
+  padding: 1rem; }
+
+.aboutUs__paraText {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 1.5rem; }
+
+.misson__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; }
+
+.misson__item {
+  flex: 1 0 5%; }
+
+.misson__img {
+  height: 30rem;
+  width: 10% !important;
+  padding: 1rem;
+  margin: auto 1rem; }
